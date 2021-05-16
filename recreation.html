@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Palace | Recreation</title>
+    <link href="css/SpaC.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<<header style="top: 0;
+z-index: 50;
+position: fixed;
+width: 100%;"> 
+    <div class="container">
+        
+       <h1>The Grand Palace</h1><br>
+    </div>
+       <!--navbutton \\justified makes sure everything fits properly-->
+       <!--home dining recreation spa gym about-->
+      <div> <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="dining.html">Dining</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Recreation</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link " href="spa.html" title="Redirect to the spa page">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="clubhouse.html" title="">Clubhouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About</a>
+            </li> 
+        </div> 
+        </header>
+    <div class="jumbotron card card-image"> <!--Remove video tag and CSS if Not using video-->
+            <video id="video-background" preload="" muted="" autoplay="" loop="">
+                <source src="resources/recreation.mp4" type="video/mp4">
+                
+              </video>
+            <div class="container">
+        
+            <h1 class="display-4"><br><b>Relax and Enjoy the hospitality along with cozy rooms</b></h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="book.html" target="_blank" role="button">Book A Room</a><br><br><br>
+		<h2>CHANGE OF PLANS? CANCEL FOR FREE!</h2><br><a class="btn btn-primary btn-lg" href="cancel.html" target="_blank">CANCEL BOOKING</a>
+        </div>
+            
+           
+          </div>
+<div class="container">
+    <div class="row"> 
+        <div class="col-md-8">
+            <h1>Swimming</h1> 
+            <p>Everyone wants to have a nice time with family on any vacation. We have some of the best swimming pools in Mumbai. Spend your day at our pools and
+		take your experience to a new level with our water park for people of all age groups. Our services start at 9am in the morning and go on till 5pm
+		in the evening. Separate pools for children are also available. We also rent out swim suits for adults as well as children, so don't worry if you
+		forget to bring your swim suits with you. Come and have a relaxing day with us.</p>
+                
+        </div>
+        
+        <div class="col-md-4"> <!--Can Use this for the GYM and Clubhouse-->
+            <h1>Children Playroom</h1>
+            <p>The playroom provides a bunch of toys and rides for children of all age groups. The playroom opens at 9am in the morning and closes at 9pm at night. 		Come and play with your children and have a good time. Babysitters available to take care of children for the entire time. </p>
+        </div>
+        <div class="col-md-8"><br>
+          <h1>Yoga Classes</h1>
+          <p>
+          What better way to start your day other than yoga? Come attain peace of mind and start your day with our daily yoga classes with trainers and other guests. We 		  start daily at 6am and go on till 9am. Leave anytime. Come and start your day in the best possible way with your loved ones. Stay fit, stay healthy!
+          </p>
+        </div>
+
+    </div>
+    
+</div>
+
+<!--added a div with height style to make sure one section at a time on the screen of the viewer -->
+<div style="height: 60px;"></div> 
+</section>
+<!--
+<div class="container">
+  <h1>Book your Appointment</h1> -->
+ <!-- 
+<form action="" method="POST"> Using sVarName to indicate spa info/data -->
+    <!--<div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" name="sEmail" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required >
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Contact Number</label>
+        <input type="text" name="sNumber"class="form-control" id="exampleFormControlInput1" placeholder="Enter indian contact number"  pattern="^\+91[0-9]{10}$" required>
+        <small id="emailHelp" class="form-text text-muted">Please Enter contact with +91 .</small>
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="text" name="sName" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Name" required> 
+      <small id="emailHelp" class="form-text text-muted">Enter your Full Name</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Reservation Date</label>
+      <input type="Date" name="sSpa" class="form-control" id="exampleFormControlInput1" required>
+      <small id="emailHelp" class="form-text text-muted">Enter the Date you want the reservation</small>
+    </div> -->
+    <!-- this has to be used in the hotel room booking hence commented it out
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Check-in</label>
+      <input type="Date" name="sCheck" class="form-control" id="exampleFormControlInput1" required>
+      <small id="emailHelp" class="form-text text-muted">Enter your Check-in Date</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Check-out</label>
+      <input type="Date" name="sEmail" class="form-control" id="exampleFormControlInput1" required>
+      <small id="emailHelp" class="form-text text-muted">Enter your Check-Out Date</small>
+    </div>
+
+    
+  
+  
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select A Time</label>
+      <select class="form-control" name="sTime" id="exampleFormControlSelect1" required>
+        <option>10AM-10:30AM</option>
+        <option>1PM-1:30PM</option>
+        <option>3PM-3:30PM</option>
+        <option>7PM-7:30PM</option>
+        <option>10PM-10:30PM</option>
+      </select>
+      <small id="emailHelp" class="form-text text-muted">Special reservation will be made for you during the selected Time</small>
+    </div>
+    <button type="submit" class="btn btn-light">Submit</button>
+    <button type="reset" class="btn btn-light">Clear</button>
+    </form>
+    </div>
+    <br>    -->
+
+
+    <!--added a div with height style to make sure one section at a time on the screen of the viewer -->
+<div style="height: 60px;"></div> 
+
+  <div class="container"> <!--Use this carousel with images of the same resoultions and if wanting to size the carousel modify the height in the carousel item|| have to keep anyone class active for it to show up -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner"> <!--using 2000*x where x>600. Img works width*height -->
+        <div class="carousel-item active" data-interval="1500" style="height:600px">
+          <img src="resources/yoga.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="1500"  style="height:600px">
+          <img src="resources/pool1.jpg" class="d-block w-100" alt="...">
+        </div> 
+        <div class="carousel-item" data-interval="1500"  style="height:600px">
+          <img src="resources/kidsp.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    
+      <div style="height: 400px;"></div> 
+
+
+
+    
+<footer>The Grand Palace &copy;</footer>
+
+<!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

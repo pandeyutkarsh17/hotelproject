@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body {font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
+        padding:0;
+        margin:0;
+        background-color: #f4f4f4;
+} 
+
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;}
+
+header{font-family: 'Prompt', sans-serif;}
+
+
+/*container aligns the webpage to centre*/
+
+/*header css*/
+header{
+    background:black ;
+    color: #FFFFFF;
+    padding-top: 30px ;
+    min-height: 70px;
+    border-bottom: skyblue 3px solid;
+}
+
+
+
+
+ 
+
+header .current a{
+    color: red;
+    font-weight: bold;
+}
+ header a:hover{
+     color:rgba(65, 65, 226, 0.815);
+     font-weight: bold;
+ }
+ 
+ footer{
+     padding:20px;
+     margin-top: 20px;
+    color: white;
+    background-color:#353233 ;
+    text-align: center;
+ }
+ /* have to nest it this way otherwise the video will go on the whole webpage */
+ .jumbotron{
+    color: black;
+ 
+    text-align: center;
+/*add } after this comment to make the video go over the webpage and goes haywire
+it works as of now dont question it XD*/
+    
+    .jumbotron{
+    position: relative;
+    z-index:-2;
+  }
+  
+  #video-background { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    width:100%;
+  }
+
+   }

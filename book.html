@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Grand Palace | Book a room </title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="css/SpaC.css" rel="stylesheet">
+</head>
+
+<body>
+  <header style="top: 0;
+z-index: 50;
+position: fixed;
+width: 100%;">
+    <div class="container">
+
+      <h1>The Grand Palace</h1><br>
+    </div>
+    <!--navbutton \\justified makes sure everything fits properly-->
+    <!--home dining recreation spa gym about-->
+    <div>
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="dining.html" title="Redirect to the dining page">Dining</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="recreation.html">Recreation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="spa.html" title="Redirect to the spa page">Spa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="clubhouse.html" title="">Clubhouse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="about.html">About</a>
+        </li>
+    </div>
+  </header>
+  <div class="jumbotron card card-image">
+    <!--Remove video tag and CSS if Not using video-->
+
+    <div class="container">
+        <!--Use this carousel with images of the same resoultions and if wanting to size the carousel modify the height in the carousel item|| have to keep anyone class active for it to show up -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!--using 2000*x where x>600. Img works width*height -->
+            <div class="carousel-item active" data-interval="1500" style="height:600px">
+              <img src="resources/room1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="1500" style="height:600px">
+              <img src="resources/room2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-interval="1500" style="height:600px">
+              <img src="resources/room3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    <div class="container">
+	<br><br>
+      <h1 class="display-4">Relax and Enjoy the hospitality along with cozy rooms</h1>
+      
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1></h1>
+        <p>
+        </p>
+
+      </div>
+
+      <div class="col-md-4">
+        <!--Can Use this for the GYM and Clubhouse-->
+        <h1></h1>
+        <p>
+        </p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <!--added a div with height style to make sure one section at a time on the screen of the viewer -->
+  <div style="height: 60px;"></div>
+  </section>
+  
+<div class="container">
+  <h1>Book Your Stay</h1>
+  
+<form action="php/db1.php"  autocomplete="off" method="POST"> <!--Using bVarName to indicate booking info/data -->
+  <div class="form-group"><br>
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" name="bEmail" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+" required >
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Contact Number</label>
+        <input type="tel" name="bNumber" class="form-control" id="exampleFormControlInput1" placeholder="Enter indian contact number" pattern="^\+91[789][0-9]{9}$" required>
+        <small id="emailHelp" class="form-text text-muted">Please Enter contact with +91 .</small>
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="text" name="bName" class="form-control" id="exampleFormControlInput1" pattern="/^[a-z ]{3,20}*$/i" placeholder="Enter your Name" required> 
+      <small id="emailHelp" class="form-text text-muted">Enter your Full Name</small>
+    </div> 
+     <div class="form-group">
+      <label for="exampleFormControlInput1">Check-in</label>
+      <input type="date" name="bCheck" class="form-control" id="exampleFormControlInput11" required>
+      <small id="emailHelp" class="form-text text-muted">Enter your Check-in Date</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Check-out</label>
+      <input type="date" name="bCout" class="form-control" id="exampleFormControlInput12" onchange="dateCheck()" required>
+      <small id="emailHelp" class="form-text text-muted">Check out compulsorily are to be done in the morning</small>
+    </div>
+  
+  
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">No. of Single Bed-Room ₹10000/night (per room)</label>
+      <select class="form-control" name="bChoice1" id="exampleFormControlSelect1" required >
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <small id="emailHelp" class="form-text text-muted"></small></div>
+        
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">No.of Double Bed-Room ₹12000/night (per room)</label>
+        <select class="form-control" name="bChoice2" id="exampleFormControlSelect2" required>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <small id="emailHelp" class="form-text text-muted"></small></div>
+         
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">No.of Triple Bed Rooms ₹14000/night (per room)</label>
+        <select class="form-control" name="bChoice3" id="exampleFormControlSelect3" required>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <small id="emailHelp" class="form-text text-muted"></small></div>
+
+	<div class="form-body">
+    <!-- Card Number --><br>
+    <h1>Payment</h1><br>
+    <label for="exampleFormControlInput1">Credit Card Number</label>&nbsp;&nbsp<img src="resources/cd.png" width="180px" height="30px">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Card Number" pattern="^[0-9]{16}$" required>
+ 
+    <!-- Date Field -->
+    <div class="date-field">
+	
+      <div class="month"><br>
+	<label for="exampleFormControlSelect1">Expiration Month</label><br>
+        <select name="Month" class="form-control">
+          <option value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select><br>
+	<label for="exampleFormControlSelect1">Expiration Year</label><br>
+        <select name="Year" class="form-control">
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2024">2025</option>
+          <option value="2026">2026</option>
+        </select>
+      </div>
+    </div>
+ 
+    <!-- Card Verification Field -->
+    <div class="card-verification">
+      <div class="cvv-input"><br>
+	<label for="exampleFormControlSelect1">CVV</label><br>
+        <input type="text" placeholder="123" pattern="^[0-9]{3,4}$" required>
+        <small id="emailHelp" class="form-text text-muted"> 3 or 4 digits usually found on the signature strip</small>
+      </div>
+    </div><br>
+	<button type="button" class="btn btn-light1" onclick="return payB()">Click to see your Bill</button>
+      <div class="price">
+	<label for="exampleFormControlSelect1">Your bill is </label><br>
+        ₹<input type="text" id="pay1">
+        <small id="emailHelp" class="form-text text-muted"> Click Pay to confirm booking</small>
+      </div>
+ 
+    
+    </div><br>
+    <button type="submit" class="btn btn-light">Pay</button>
+    <button type="reset" class="btn btn-light">Clear</button>
+    </form>
+    </div>
+    <br>   
+
+
+  <!--added a div with height style to make sure one section at a time on the screen of the viewer -->
+  <div style="height: 60px;"></div>
+
+
+  <div style="height: 400px;"></div>
+
+
+<script>
+function pay(){
+	  var d = new Date();
+	  d=document.getElementById("exampleFormControlInput11").value;
+
+         var e = new Date();
+	 e=document.getElementById("exampleFormControlInput12").value;
+	  
+         var parts = e.match(/(\d+)/g);
+         var k =new Date(parts[0], parts[1]-1, parts[2]); // months are 0-based
+
+         var parts1 = d.match(/(\d+)/g);
+         var n =new Date(parts1[0], parts1[1]-1, parts1[2]); // months are 0-based
+	
+	// To calculate the time difference of two dates 
+	var timeDiff = Math.abs(k.getTime()-n.getTime());
+	//alert(timeDiff);
+
+         // days difference
+         var diffDays =(timeDiff / (1000 * 3600 * 24));
+
+	var x=document.getElementById('exampleFormControlSelect1').value*10000;
+	var y=document.getElementById('exampleFormControlSelect2').value*12000;
+	var z=document.getElementById('exampleFormControlSelect3').value*14000;
+	var s=x+y+z;
+	var m=diffDays*s;
+	alert('Payment Successful! ₹'+m+' paid!');
+}
+
+function payB(){
+	var d = new Date();
+	  d=document.getElementById("exampleFormControlInput11").value;
+
+         var e = new Date();
+	 e=document.getElementById("exampleFormControlInput12").value;
+	  
+         var parts = e.match(/(\d+)/g);
+         var k =new Date(parts[0], parts[1]-1, parts[2]); // months are 0-based
+
+         var parts1 = d.match(/(\d+)/g);
+         var n =new Date(parts1[0], parts1[1]-1, parts1[2]); // months are 0-based
+	
+	// To calculate the time difference of two dates 
+	var timeDiff = Math.abs(k.getTime()-n.getTime());
+	//alert(timeDiff);
+
+         // days difference
+         var diffDays =(timeDiff / (1000 * 3600 * 24));
+
+	var x=document.getElementById('exampleFormControlSelect1').value*10000;
+	var y=document.getElementById('exampleFormControlSelect2').value*12000;
+	var z=document.getElementById('exampleFormControlSelect3').value*14000;
+	var s=x+y+z;
+
+	if(x==0 && y==0 && z==0)
+	alert('Select at least 1 room!');	
+
+	else{
+	var m=diffDays*s;
+	document.getElementById('pay1').value=m;
+	}
+}
+
+function dateCheck(){
+	var d = new Date();
+	  d=document.getElementById("exampleFormControlInput11").value;
+
+         var e = new Date();
+	 e=document.getElementById("exampleFormControlInput12").value;
+	  
+         var parts = e.match(/(\d+)/g);
+         var k =new Date(parts[0], parts[1]-1, parts[2]); // months are 0-based
+
+         var parts1 = d.match(/(\d+)/g);
+         var n =new Date(parts1[0], parts1[1]-1, parts1[2]); // months are 0-based
+
+	if (n > k) {
+            alert('Checkout date should be after checkin date');
+	    document.getElementById("exampleFormControlInput12").value="";
+         } 
+}
+
+$(function(){
+    $('[type="date"].form-control').prop('min', function(){
+        return new Date().toJSON().split('T')[0];
+    });
+});
+
+
+</script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <footer>The Grand Palace &copy;</footer>
+
+</body>
+
+</html>
