@@ -27,8 +27,6 @@ header a {
 .room {
   font-family: serif;
   font-weight: bold;
-  height: 500px;
-  background-color: #f9f5ec;
   font-family: "Domine", serif;
   font-family: "Kufam", cursive;
   margin-top: -55px;
@@ -52,8 +50,7 @@ h2.room1 {
 }
 .flist {
   float: left;
-  margin-left: 300px;
-  font-size: large;
+  margin-left: 20%;
   font-family: "Domine", serif;
   font-family: "Kufam", cursive;
 }
@@ -62,13 +59,8 @@ h2.room1 {
   margin-top: 80px;
 }
 .fg > h1 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-family: "TrajanProRegular", normal;
   font-weight: 400;
-  font-size: 48px;
   line-height: 38px;
 }
 
@@ -79,7 +71,8 @@ h2.room1 {
   text-align: center;
   font-family: "Domine", italic;
   font-weight: 600;
-  font-size: 18px;
+  margin-left:20%;
+  margin-right:20%;
 }
 
 .hr {
@@ -127,13 +120,21 @@ footer {
 }
 .dbtr {
   float: right;
-  margin-right: 25px;
-  margin-left: 10px;
+  width:45%;
+  height:490px;
   font-family: "Domine", serif;
   font-family: "Kufam", cursive;
   font-size: 15px;
   background-color: #e3ded3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.dc{
+  margin-left:3%;
+  margin-right:3%;}
 
 .bqt {
   float: left;
@@ -147,24 +148,22 @@ footer {
   font-size: 15px;
   background-color: #e3ded3;
   height: 490px;
-  width: 683px;
+  width: 45%;
   margin-left: 00px;
 }
 
 .review {
   background-color: #f0ebdf;
-}
-.review > h1 {
   display: block;
   clear: both;
+}
+.review > h1 {
   background-color: #f0ebdf;
   text-align: center;
   font-family: "TrajanProRegular", normal;
-  font-size: 43px;
 }
 .dlist {
   background-color: #f0ebdf;
-  font-size: large;
   font-family: "Domine", serif;
   font-family: "Kufam", cursive;
 }
@@ -174,17 +173,18 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 420px;
-  margin-right: 418px;
-  background-color: #dddddd;
+  margin-left: 10%;
+  margin-right: 10%;
+  
 }
 .tst {
   border: black solid;
+  background-color: #dddddd;
 }
 
 .dbb {
-  margin-top: -120px !important;
-  margin-left: 35px;
+  margin-top: -8%;
+  margin-left: 3.5%;
 }
 
 .container1 {
